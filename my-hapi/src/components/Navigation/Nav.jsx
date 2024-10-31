@@ -63,6 +63,13 @@ function Nav() {
                 </button>
                 
                 {/* Menu Links */}
+                <CustomLink href="/">Home</CustomLink>
+                <hr className="w-full border-gray-700" />
+                <CustomLink href="/thirdlayout">About Us</CustomLink>
+                <hr className="w-full border-gray-700" />
+                <CustomLink href="/seclayout">Pricing</CustomLink>
+                <hr className="w-full border-gray-700" />
+                <CustomLink href="/fourthlayout">Contact Us</CustomLink>
                 <CustomLink href="/" className="text-lg">Area Coverage</CustomLink>
                 <hr className="w-full border-gray-700" />
                 <CustomLink href="/sixlayout" className="text-lg">Sign In</CustomLink>
