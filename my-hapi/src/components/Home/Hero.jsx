@@ -41,29 +41,30 @@ function Hero() {
 
             {/* Text and Button Content */}
             <div className="relative text-white text-center z-10 px-4 sm:px-6 md:px-8">
-    <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold md:font-medium leading-snug">
+    <h1 className="text-2xl sm:text-4xl md:text-7xl font-bold md:font-medium leading-snug">
         Connecting Communities<br />One Line at a Time.
     </h1>
     <p className="font-thin text-lg sm:text-xl md:text-1xl mt-2">
         Provider of affordable internet service to the Filipinos
     </p>
 
-    <div className="w-full max-w-xs sm:max-w-sm mx-auto mt-4 sm:mt-6 bg-transparent border backdrop-blur rounded-md dark:border-white focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-300 focus-within:ring-opacity-40">
-        <form className="flex flex-col md:flex-row">
-            <input
-                type="email"
-                placeholder="Enter your Location"
-                className="flex-1 h-10 px-3 sm:px-4 py-2 m-1 text-white placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0"
-                required
-            />
-            <button
-                type="button"
-                className="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-orange rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
-            >
-                Order Now
-            </button>
-        </form>
-    </div>
+    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto mt-3 sm:mt-4 bg-transparent border backdrop-blur rounded-md dark:border-white focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-300 focus-within:ring-opacity-40">
+    <form className="flex flex-col md:flex-row">
+        <input
+            type="email"
+            placeholder="Enter your Location"
+            className="flex-1 h-8 sm:h-10 px-2 sm:px-4 py-1 sm:py-2 m-1 text-white placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0"
+            required
+        />
+        <button
+            type="button"
+            className="h-8 sm:h-10 px-3 sm:px-4 py-1 sm:py-2 m-1 text-white transition-colors duration-300 transform bg-orange rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
+        >
+            Order Now
+        </button>
+    </form>
+</div>
+
 </div>
 
         </div>
@@ -131,7 +132,7 @@ function Hero() {
             <br className="hidden sm:block" />
             of every family. At Hapi.Bytes, empowering communities through reliable service is our passion.
         </p>
-        <button className="text-orange border-4 border-orange p-2 text-xs sm:text-sm md:text-base">Read More</button>
+        <button href="fifthlayout" className="text-orange border-4 border-orange p-2 text-xs sm:text-sm md:text-base">Read More</button>
     </div>
 </div>
 
@@ -140,7 +141,7 @@ function Hero() {
 }
 function CustomLink({ href, children, ...props }) {
     return (
-        <Link to={href} {...props} className="hover:underline">
+        <Link to={href} {...props} >
             {children}
         </Link>
     );

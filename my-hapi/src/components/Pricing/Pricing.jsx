@@ -38,10 +38,10 @@ function Pricing() {
 
 
                 <div className="relative text-white text-center z-10">
-                    <h1 className="text-xl md:text-7xl font-medium">
+                    <h1 className="text-4xl font-bold md:text-7xl md:font-medium">
                         Affordable Plans for Every Household
                     </h1>
-                    <p className="font-thin text-xl md:text-1xl mt-2">
+                    <p className="font-thin text-sm md:text-1xl mt-2">
                         Choose from a range of affordable plans designed to fit your home or business needs. Stay connected, your way
                     </p>
                     <button type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
@@ -49,8 +49,8 @@ function Pricing() {
             </div>
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col space-y-4 text-center w-full mb-20">
-                    <span className="font-super bold tracking-wider text-4xl md:font-bold md:text-5xl uppercase text-black">Our <span className="text-orange">Plans</span>  for Your <span className="text-orange">Connectivity</span> </span>
-                    <h2 className="text-4xl font-light text-xl">Find the perfect plan for your needs whether it's for your business, startup, or home WiFi. <br/>Explore our top options below and get connected today.</h2>
+                    <span className="font-bold tracking-wider text-4xl md:font-bold md:text-5xl uppercase text-black">Our <span className="text-orange">Plans</span>  for Your <span className="text-orange">Connectivity</span> </span>
+                    <h2 className="text-sm md:text-4xl font-light text-xl">Find the perfect plan for your needs whether it's for your business, startup, or home WiFi. <br/>Explore our top options below and get connected today.</h2>
                 </div>
                 <div className="flex flex-wrap -m-4">
                     {/* Adjusted class xl:w-1/3 for 3x3 layout */}

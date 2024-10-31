@@ -11,11 +11,11 @@ function Nav() {
 
     return (
         <div className="relative z-50">
-        <div className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 md:p-10">
+        <div className="absolute top-0 left-0 right-4 flex items-center justify-between p-5 md:p-10">
             {/* Logo Section */}
-            <div className="w-auto">
+            <div className="w-auto ">
                 <CustomLink href="/">
-                    <img src="images/logo-light3-1.webp" className="h-10 md:h-12 w-auto" alt="logo" />
+                    <img src="images/logo-light3-1.webp" className="h-9 md:h-12  w-auto" alt="logo" />
                 </CustomLink>
             </div>
     
@@ -70,11 +70,12 @@ function Nav() {
                 <CustomLink href="/seclayout">Pricing</CustomLink>
                 <hr className="w-full border-gray-700" />
                 <CustomLink href="/fourthlayout">Contact Us</CustomLink>
-                <CustomLink href="/" className="text-lg">Area Coverage</CustomLink>
+                <hr className="w-full border-gray-700" />
+                <CustomLink href="/sevenlayout" className="text-lg">Area Coverage</CustomLink>
                 <hr className="w-full border-gray-700" />
                 <CustomLink href="/sixlayout" className="text-lg">Sign In</CustomLink>
                 <hr className="w-full border-gray-700" />
-                <CustomLink href="/fifthlayout" className="text-lg">Language</CustomLink>
+                <CustomLink href="/ layout" className="text-lg">Language</CustomLink>
                 <hr className="w-full border-gray-700" />
                 <CustomLink href="/" className="text-lg">Internet Speed</CustomLink>
             </div>

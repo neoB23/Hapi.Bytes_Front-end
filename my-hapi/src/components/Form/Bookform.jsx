@@ -139,74 +139,81 @@ const Bookform = () => {
                                     
                                 )}
                                 {section === 'section3' && (
-                                        <form className="grid grid-cols-3 gap-2 w-full  flex items-center">
-                                          <div >
-                                            <input className="hidden" id="radio_1" type="radio" name="radio" />
-                                            <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" for="radio_1">
-                                              <span className="text-xs font-semibold uppercase">HB EXTRA</span>
-                                              <span className="text-xl font-bold mt-2">₱699/month</span>
-                                              <ul className="text-sm mt-2">
-                                                <li>Speed: 25 Mbps</li>
-                                                <li>Fiber Fast Unli Data</li>
-                                              </ul>
-                                            </label>
-                                          </div>
-                                          <div>
-                                            <input className="hidden" id="radio_2" type="radio" name="radio"/>
-                                            <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" for="radio_2">
-                                              <span className="text-xs font-semibold uppercase">HB LITE</span>
-                                              <span className="text-xl font-bold mt-2">₱999/month</span>
-                                              <ul className="text-sm mt-2">
+                                        <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 w-full flex items-center">
+                                        <div>
+                                          <input className="hidden" id="radio_1" type="radio" name="radio" />
+                                          <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" htmlFor="radio_1">
+                                            <span className="text-xs md:text-sm font-semibold uppercase">HB EXTRA</span>
+                                            <span className="text-lg md:text-xl font-bold mt-2">₱699/month</span>
+                                            <ul className="text-xs md:text-sm mt-2">
+                                              <li>Speed: 25 Mbps</li>
+                                              <li>Fiber Fast Unli Data</li>
+                                            </ul>
+                                          </label>
+                                        </div>
+                                      
+                                        <div>
+                                          <input className="hidden" id="radio_2" type="radio" name="radio" />
+                                          <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" htmlFor="radio_2">
+                                            <span className="text-xs md:text-sm font-semibold uppercase">HB LITE</span>
+                                            <span className="text-lg md:text-xl font-bold mt-2">₱999/month</span>
+                                            <ul className="text-xs md:text-sm mt-2">
                                               <li>Speed: 45 Mbps</li>
                                               <li>Fiber Fast Unli Data</li>
-                                              </ul>
-                                            </label>
-                                          </div>
-                                          <div>
-                                            <input className="hidden" id="radio_3" type="radio" name="radio"/>
-                                            <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" for="radio_3">
-                                              <span className="text-xs font-semibold uppercase">HB PLUS</span>
-                                              <span className="text-xl font-bold mt-2">₱1299/month</span>
-                                              <ul className="text-sm mt-2">
+                                            </ul>
+                                          </label>
+                                        </div>
+                                      
+                                        <div>
+                                          <input className="hidden" id="radio_3" type="radio" name="radio" />
+                                          <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" htmlFor="radio_3">
+                                            <span className="text-xs md:text-sm font-semibold uppercase">HB PLUS</span>
+                                            <span className="text-lg md:text-xl font-bold mt-2">₱1299/month</span>
+                                            <ul className="text-xs md:text-sm mt-2">
                                               <li>Speed: 70 Mbps</li>
                                               <li>Fiber Fast Unli Data</li>
-                                              </ul>
-                                            </label>
-                                          </div>
-                                          <div >
-                                            <input className="hidden" id="radio_4" type="radio" name="radio"/>
-                                            <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" for="radio_4">
-                                              <span className="text-xs font-semibold uppercase">HB MEGA</span>
-                                              <span className="text-xl font-bold mt-2">₱1499/month</span>
-                                              <ul className="text-sm mt-2">
+                                            </ul>
+                                          </label>
+                                        </div>
+                                      
+                                        <div>
+                                          <input className="hidden" id="radio_4" type="radio" name="radio" />
+                                          <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" htmlFor="radio_4">
+                                            <span className="text-xs md:text-sm font-semibold uppercase">HB MEGA</span>
+                                            <span className="text-lg md:text-xl font-bold mt-2">₱1499/month</span>
+                                            <ul className="text-xs md:text-sm mt-2">
                                               <li>Speed: 100 Mbps</li>
                                               <li>Fiber Fast Unli Data</li>
-                                              </ul>
-                                            </label>
-                                          </div>
-                                          <div >
-                                            <input className="hidden" id="radio_5" type="radio" name="radio" />
-                                            <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" for="radio_5">
-                                              <span className="text-xs font-semibold uppercase">HB GIGA</span>
-                                              <span className="text-xl font-bold mt-2">₱1699/month</span>
-                                              <ul className="text-sm mt-2">
+                                            </ul>
+                                          </label>
+                                        </div>
+                                      
+                                        <div>
+                                          <input className="hidden" id="radio_5" type="radio" name="radio" />
+                                          <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" htmlFor="radio_5">
+                                            <span className="text-xs md:text-sm font-semibold uppercase">HB GIGA</span>
+                                            <span className="text-lg md:text-xl font-bold mt-2">₱1699/month</span>
+                                            <ul className="text-xs md:text-sm mt-2">
                                               <li>Speed: 155 Mbps</li>
                                               <li>Fiber Fast Unli Data</li>
-                                              </ul>
-                                            </label>
-                                          </div>
-                                          <div >
-                                            <input className="hidden" id="radio_6" type="radio" name="radio" />
-                                            <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" for="radio_6">
-                                              <span className="text-xs font-semibold uppercase">HB TERA</span>
-                                              <span className="text-xl font-bold mt-2">₱2499/month</span>
-                                              <ul className="text-sm mt-2">
+                                            </ul>
+                                          </label>
+                                        </div>
+                                      
+                                        <div>
+                                          <input className="hidden" id="radio_6" type="radio" name="radio" />
+                                          <label className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer" htmlFor="radio_6">
+                                            <span className="text-xs md:text-sm font-semibold uppercase">HB TERA</span>
+                                            <span className="text-lg md:text-xl font-bold mt-2">₱2499/month</span>
+                                            <ul className="text-xs md:text-sm mt-2">
                                               <li>Speed: 250 Mbps</li>
                                               <li>Fiber Fast Unli Data</li>
-                                              </ul>
-                                            </label>
-                                          </div>
-                                        </form>
+                                            </ul>
+                                          </label>
+                                        </div>
+                                      </form>
+                                      
+                                      
                                 )}
                                 {section === 'section4' && (
                                     <div id='section3' className="p-8 mt-6 lg:mt-0 rounded shadow bg-white">

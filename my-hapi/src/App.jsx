@@ -13,12 +13,15 @@ const Contactform = lazy(() => import('./components/Contactform/Contact-form'));
 const Bookform = lazy(() => import('./components/Form/Bookform'));
 const Sample = lazy(() => import('./components/Form/Sample'));
 const Admindash = lazy(() => import('./components/Admin/Admindash'));
+const Login = lazy(() => import('./components/Authentication/Login'));
+// const Navbar = lazy(() => import('./components/Navigation/NavBar'));
+// const HeroSamp = lazy(() => import('./components/Home/HeroSamp'));
 
 // Layouts
 const MainLayout = () => (
   <div className="fade-in">
-    <Nav />
-    <Hero />
+    <Nav/>
+    <Hero/>
     <Footer />
   </div>
 );
@@ -58,7 +61,12 @@ const SixLayout = () => (
     <Admindash/>
   </div>
 );
-
+const SevenLayout = () => (
+  <div className="fade-in">
+    <Login/>
+    <Footer/>
+  </div>
+);
 function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation(); // To detect route changes
@@ -86,6 +94,7 @@ function App() {
         <Route path="/fourthlayout" element={<FourthLayout />} />
         <Route path="/fifthlayout" element={<FifthLayout />} />
         <Route path="/sixlayout" element={<SixLayout />} />
+        <Route path="/sevenlayout" element={<SevenLayout />} />
       </Routes>
     </Suspense>
   );
