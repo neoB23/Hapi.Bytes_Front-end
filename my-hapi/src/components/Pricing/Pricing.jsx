@@ -1,16 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Pricing() {
+    const images = [
+        'images/close-up-child-spending-time-with-parents.jpg',
+        'images/happy-asian-family-using-computer-laptop-together-sofa-home-living-room-xa.jpg',
+        'images/family-having-video-call-home.jpg',
+    ];
+
+    const [currentImage, setCurrentImage] = useState(0);
+    const [slide, setSlide] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSlide(true); // Start slide-out animation
+
+            // Wait for the slide-out animation to complete before changing the image
+            setTimeout(() => {
+                setCurrentImage((prevImage) => (prevImage + 1) % images.length); // Change image
+                setSlide(false); // Start slide-in animation
+            }, 500); // Duration of the animation
+        }, 20000); // Change image every 7 seconds
+
+        return () => clearInterval(interval);
+    }, []);
     return (
         <section className="dark:text-gray-800 min-h-screen flex flex-col">
             <div className="min-h-screen relative flex items-center justify-center">
-                <div className="absolute inset-0 bg-cover" 
-                    style={{ 
-                    backgroundImage: `url('images/smiling-family-watching-video-while-daughter-pointing-digital-tablet.jpg')`,
+            <div
+                className={`absolute inset-0 bg-cover transition-all duration-500 ${slide ? 'slide-out' : 'slide-in'}`}
+                style={{
+                    backgroundImage: `url(${images[currentImage]})`,
                     backgroundPosition: 'center 30%',
-                    filter: 'brightness(0.4)',
+                    filter: 'brightness(0.5)',
                     zIndex: -1,
-                }}></div>
+                }}
+            ></div>
+
 
                 <div className="relative text-white text-center z-10">
                     <h1 className="text-xl md:text-7xl font-medium">
@@ -23,9 +48,9 @@ function Pricing() {
                 </div>
             </div>
             <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-col text-center w-full mb-20">
-                    <span className="font-bold tracking-wider uppercase text-orange">Pricing</span>
-                    <h2 className="text-4xl font-bold lg:text-5xl">Choose your best plan</h2>
+                <div className="flex flex-col space-y-4 text-center w-full mb-20">
+                    <span className="font-super bold tracking-wider text-4xl md:font-bold md:text-5xl uppercase text-black">Our <span className="text-orange">Plans</span>  for Your <span className="text-orange">Connectivity</span> </span>
+                    <h2 className="text-4xl font-light text-xl">Find the perfect plan for your needs whether it's for your business, startup, or home WiFi. <br/>Explore our top options below and get connected today.</h2>
                 </div>
                 <div className="flex flex-wrap -m-4">
                     {/* Adjusted class xl:w-1/3 for 3x3 layout */}
@@ -58,14 +83,14 @@ function Pricing() {
 					{/* Plan 2 */}
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra 699</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱699</h1>
+                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Lite</h2>
+                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱999</h1>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>Speed: 25 Mbps
+                                </span>Speed: 45 Mbps
                             </p>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -85,14 +110,14 @@ function Pricing() {
 					
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra 699</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱699</h1>
+                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Plus</h2>
+                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱1299</h1>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>Speed: 25 Mbps
+                                </span>Speed: 70 Mbps
                             </p>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -112,14 +137,14 @@ function Pricing() {
 
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra 699</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱699</h1>
+                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Mega</h2>
+                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱1499</h1>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>Speed: 25 Mbps
+                                </span>Speed: 100 Mbps
                             </p>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -139,14 +164,14 @@ function Pricing() {
 
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra 699</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱699</h1>
+                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra Giga</h2>
+                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱1699</h1>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>Speed: 25 Mbps
+                                </span>Speed: 155 Mbps
                             </p>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -165,14 +190,14 @@ function Pricing() {
                     </div>
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra 699</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱699</h1>
+                            <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Tera</h2>
+                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱2499</h1>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>Speed: 25 Mbps
+                                </span>Speed: 250 Mbps
                             </p>
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">

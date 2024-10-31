@@ -40,24 +40,32 @@ function Hero() {
             ></div>
 
             {/* Text and Button Content */}
-            <div className="relative text-white text-center z-10">
-                <h1 className="text-xl md:text-7xl font-medium">
-                    Connecting Communities<br />One Line at a Time.
-                </h1>
-                <p className="font-thin text-xl md:text-1xl mt-2">
-                    Provider of affordable internet service to the Filipinos
-                </p>
-                
-                <div class=" w-full max-w-sm mx-auto mt-6 bg-transparent border backdrop-blur rounded-md dark:border-white focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-300 focus-within:ring-opacity-40">
-                <form class="flex flex-col md:flex-row     ">
-                    <input type="email" placeholder="Enter your Location" class=" flex-1 h-10 px-4 py-2 m-1 text-white placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0 "required />
-                    <button type="button" class="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-orange rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400">
-                        Order Now
-                    </button>
-                </form>
-                </div>
-            {/* <p className="text-sm font-ligth p-4 space-y-10">View Coverage Area</p> */}
-            </div>
+            <div className="relative text-white text-center z-10 px-4 sm:px-6 md:px-8">
+    <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold md:font-medium leading-snug">
+        Connecting Communities<br />One Line at a Time.
+    </h1>
+    <p className="font-thin text-lg sm:text-xl md:text-1xl mt-2">
+        Provider of affordable internet service to the Filipinos
+    </p>
+
+    <div className="w-full max-w-xs sm:max-w-sm mx-auto mt-4 sm:mt-6 bg-transparent border backdrop-blur rounded-md dark:border-white focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-300 focus-within:ring-opacity-40">
+        <form className="flex flex-col md:flex-row">
+            <input
+                type="email"
+                placeholder="Enter your Location"
+                className="flex-1 h-10 px-3 sm:px-4 py-2 m-1 text-white placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0"
+                required
+            />
+            <button
+                type="button"
+                className="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-orange rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
+            >
+                Order Now
+            </button>
+        </form>
+    </div>
+</div>
+
         </div>
         <section className="m-4 md:m-8 dark:text-gray-800 ">
 			<div className="container mx-auto p-4 my-6 space-y-2 text-center">
@@ -97,32 +105,36 @@ function Hero() {
         
         
 
-        <div className="min-h-screen items-center bg-cover bg-center bg-no-repeat relative brightness-75">    
-        <div className="absolute inset-0 bg-cover" 
-                style={{ 
-                backgroundImage: `url('images/Electrical lineman.jpg.webp')`,
-                backgroundPosition: 'center 30%',
-                filter: 'brightness(0.6)',
-                zIndex: -1,
-            }}></div>
-            {/* Overlay for darker background */}
-            <div className="absolute inset-0 bg-black opacity-50"></div>
-            
-            {/* Content section */}
-            <div className="relative z-10 flex min-h-screen flex-col justify-center items-start px-8 space-y-6 ml-12">
-                <h1 className="font-bold text-4xl text-white md:text-7xl">
-                    About <span className="text-orange">Hapi.bytes</span>
-                </h1>
-                <p className="text-white text-lg">
-                    Founded in 2022, Hapi.Bytes is committed to delivering affordable internet to Filipino households.
-                    <br />
-                    More than just providing connectivity, we offer seamless internet solutions designed to meet the needs
-                    <br />
-                    of every family. At Hapi.Bytes, empowering communities through reliable service is our passion.
-                </p>
-                <button className="text-orange border-solid border-4 border-orange p-2">Read More</button>
-            </div>
-        </div>
+        <div className="min-h-screen flex items-center bg-cover bg-center bg-no-repeat relative">
+    <div 
+        className="absolute inset-0 bg-cover"
+        style={{
+            backgroundImage: `url('images/Electrical lineman.jpg.webp')`,
+            backgroundPosition: 'center',
+            filter: 'brightness(0.6)',
+            zIndex: -1,
+        }}
+    ></div>
+
+    {/* Overlay for darker background */}
+    <div className="absolute inset-0 bg-black opacity-50"></div>
+
+    {/* Content section */}
+    <div className="relative z-10 flex min-h-screen flex-col justify-center items-start px-4 sm:px-8 space-y-4 sm:space-y-6 ml-4 sm:ml-12">
+        <h1 className="font-bold text-3xl sm:text-4xl md:text-7xl text-white leading-snug">
+            About <span className="text-orange">Hapi.bytes</span>
+        </h1>
+        <p className="text-white text-sm sm:text-base md:text-lg leading-relaxed">
+            Founded in 2022, Hapi.Bytes is committed to delivering affordable internet to Filipino households.
+            <br className="hidden sm:block" />
+            More than just providing connectivity, we offer seamless internet solutions designed to meet the needs
+            <br className="hidden sm:block" />
+            of every family. At Hapi.Bytes, empowering communities through reliable service is our passion.
+        </p>
+        <button className="text-orange border-4 border-orange p-2 text-xs sm:text-sm md:text-base">Read More</button>
+    </div>
+</div>
+
         </div>
     );
 }

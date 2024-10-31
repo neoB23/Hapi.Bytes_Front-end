@@ -18,9 +18,7 @@ function Contactform() {
                 <p className="font-thin text-xl md:text-1xl mt-2">
                 Need help? Contact our team, and we’ll assist you with any questions or concerns.
                 </p>
-                <button className=" h-12 w-300 p-3 mt-6 bg-orange rounded-full">
-                    Apply Now
-                </button>
+                <button type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
             </div>
             </div>
             <section className="text-gray-600 body-font relative">
