@@ -7,30 +7,25 @@ function AboutUs(){
         'images/happy-asian-young-family-homeowners-bought-new-house-chinese-mom-dad-daughter-embracing-looking-forward-future-new-home-after-moving-relocation-sitting-floor-with-boxes-together.jpg   ',
         'images/happiness-asian-family-multi-age-generation-enjoy-watch-cheering-her-daughter-up-playing-vr-goggle-together-with-fun-exited-living-room-home-interior-background-quarantine-weekend.jpg',
     ];
-
     const [currentImage, setCurrentImage] = useState(0);
     const [slide, setSlide] = useState(false);
-
     useEffect(() => {
         const interval = setInterval(() => {
             setSlide(true); // Start slide-out animation
-
             // Wait for the slide-out animation to complete before changing the image
             setTimeout(() => {
                 setCurrentImage((prevImage) => (prevImage + 1) % images.length); // Change image
                 setSlide(false); // Start slide-in animation
             }, 500); // Duration of the animation
         }, 20000); // Change image every 7 seconds
-
         return () => clearInterval(interval);
     }, []);
     return(
         <div> 
-  
 			
         <div className="min-h-screen ">
-              <div className="min-h-screen relative min-h-screen flex items-center justify-center"> 
-              <div
+            <div className="min-h-screen relative min-h-screen flex items-center justify-center"> 
+            <div
                 className={`absolute inset-0 bg-cover transition-all duration-500 ${slide ? 'slide-out' : 'slide-in'}`}
                 style={{
                     backgroundImage: `url(${images[currentImage]})`,
@@ -48,9 +43,7 @@ function AboutUs(){
                 </p>
                 <button type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
             </div>
-
             </div>
-
             <div className="flex flex-wrap md:flex-nowrap items-center h-screen">
     {/* Left Section (About Hapi.Bytes) */}
     <div className="bg-white w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center p-6 md:p-0">
@@ -66,19 +59,16 @@ function AboutUs(){
             </div>
         </div>
     </div>
-
     {/* Right Section (Image) */}
     <div className="bg-red-600 w-full md:w-1/2 h-64 md:h-screen">
         <img src="images/462559446_915010917352093_8325600417464639268_n.jpg" className="w-full h-full object-cover" alt="Hapi.Bytes" />
     </div>
 </div>
-
 <div className="flex flex-wrap md:flex-nowrap items-center h-screen">
     {/* Left Section (Image) */}
     <div className="bg-red-600 w-full md:w-1/2 h-64 md:h-screen">
         <img src="images/462547736_1283181269791496_6732594232415440383_n.jpg" className="w-full h-full object-cover" alt="Our Goals at Hapi.Bytes" />
     </div>
-
     {/* Right Section (Our Goals) */}
     <div className="bg-white w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center p-6 md:p-0">
         <div className="mx-4 md:mx-20 space-y-6 md:space-y-10">
@@ -90,9 +80,7 @@ function AboutUs(){
             </div>
         </div>
     </div>
-</div>
-
-                
+</div>               
 <section className="text-gray-600 body-font p-8 md:p-16 lg:p-24">
     <div className="container px-5 py-12 md:py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12 md:mb-20">
@@ -100,8 +88,7 @@ function AboutUs(){
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base sm:text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio.
             </p>
-        </div>
-        
+        </div>  
         <div className="flex flex-wrap -m-4 text-center">
             <div className="p-4 w-full sm:w-1/2 md:w-1/4">
                 <div className="border-2 border-gray-200 px-6 py-8 rounded-lg">

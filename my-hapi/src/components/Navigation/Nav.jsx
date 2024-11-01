@@ -71,11 +71,11 @@ function Nav() {
                 <hr className="w-full border-gray-700" />
                 <CustomLink href="/fourthlayout">Contact Us</CustomLink>
                 <hr className="w-full border-gray-700" />
-                <CustomLink href="/sevenlayout" className="text-lg">Area Coverage</CustomLink>
+                <CustomLink href="/" className="text-lg">Area Coverage</CustomLink>
                 <hr className="w-full border-gray-700" />
-                <CustomLink href="/sixlayout" className="text-lg">Sign In</CustomLink>
+                <CustomLink href="/sevenlayout" className="text-lg">Sign In</CustomLink>
                 <hr className="w-full border-gray-700" />
-                <CustomLink href="/ layout" className="text-lg">Language</CustomLink>
+                <CustomLink href="/" className="text-lg">Language</CustomLink>
                 <hr className="w-full border-gray-700" />
                 <CustomLink href="/" className="text-lg">Internet Speed</CustomLink>
             </div>

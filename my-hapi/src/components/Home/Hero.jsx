@@ -7,24 +7,19 @@ function Hero() {
         'images/happy-young-couple-sitting-sofa-living-room-home-use-tablet-with-happiness-together-happy-family-concept.jpg',
         'images/asian-senior-couple-using-laptop-home-asian-senior-chinese-grandparents-surf-internet-check-social-media-while-lying-sofa-living-room-home-concept.jpg',
     ];
-
     const [currentImage, setCurrentImage] = useState(0);
     const [slide, setSlide] = useState(false);
-
     useEffect(() => {
         const interval = setInterval(() => {
             setSlide(true); // Start slide-out animation
-
             // Wait for the slide-out animation to complete before changing the image
             setTimeout(() => {
                 setCurrentImage((prevImage) => (prevImage + 1) % images.length); // Change image
                 setSlide(false); // Start slide-in animation
             }, 500); // Duration of the animation
         }, 20000); // Change image every 7 seconds
-
         return () => clearInterval(interval);
     }, []);
-
     return (
         <div>
         <div className="relative min-h-screen flex items-center justify-center">
@@ -38,7 +33,6 @@ function Hero() {
                     zIndex: -1,
                 }}
             ></div>
-
             {/* Text and Button Content */}
             <div className="relative text-white text-center z-10 px-4 sm:px-6 md:px-8">
     <h1 className="text-2xl sm:text-4xl md:text-7xl font-bold md:font-medium leading-snug">
@@ -47,9 +41,8 @@ function Hero() {
     <p className="font-thin text-lg sm:text-xl md:text-1xl mt-2">
         Provider of affordable internet service to the Filipinos
     </p>
-
     <div className="w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto mt-3 sm:mt-4 bg-transparent border backdrop-blur rounded-md dark:border-white focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-300 focus-within:ring-opacity-40">
-    <form className="flex flex-col md:flex-row">
+    <form className="flex flex-row md:flex-row">
         <input
             type="email"
             placeholder="Enter your Location"
@@ -64,9 +57,7 @@ function Hero() {
         </button>
     </form>
 </div>
-
 </div>
-
         </div>
         <section className="m-4 md:m-8 dark:text-gray-800 ">
 			<div className="container mx-auto p-4 my-6 space-y-2 text-center">
@@ -103,9 +94,6 @@ function Hero() {
 				</div>
 			</div>
 		</section>
-        
-        
-
         <div className="min-h-screen flex items-center bg-cover bg-center bg-no-repeat relative">
     <div 
         className="absolute inset-0 bg-cover"
@@ -116,10 +104,8 @@ function Hero() {
             zIndex: -1,
         }}
     ></div>
-
     {/* Overlay for darker background */}
     <div className="absolute inset-0 bg-black opacity-50"></div>
-
     {/* Content section */}
     <div className="relative z-10 flex min-h-screen flex-col justify-center items-start px-4 sm:px-8 space-y-4 sm:space-y-6 ml-4 sm:ml-12">
         <h1 className="font-bold text-3xl sm:text-4xl md:text-7xl text-white leading-snug">
@@ -135,7 +121,6 @@ function Hero() {
         <button href="fifthlayout" className="text-orange border-4 border-orange p-2 text-xs sm:text-sm md:text-base">Read More</button>
     </div>
 </div>
-
         </div>
     );
 }
