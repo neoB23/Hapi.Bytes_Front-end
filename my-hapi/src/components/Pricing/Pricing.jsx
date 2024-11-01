@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Pricing() {
     const images = [
@@ -44,7 +45,7 @@ function Pricing() {
                     <p className="font-thin text-sm md:text-1xl mt-2">
                         Choose from a range of affordable plans designed to fit your home or business needs. Stay connected, your way
                     </p>
-                    <button type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
+                    <button href="/" type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
                 </div>
             </div>
             <div className="container px-5 py-24 mx-auto">
@@ -72,11 +73,11 @@ function Pricing() {
                                     </svg>
                                 </span>Fiber Fast Unli Data
                             </p>
-                            <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
+                            <CustomLink href="/fifthlayout" className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
-                            </button>
+                            </CustomLink>
                             <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
                         </div>
                     </div>
@@ -99,11 +100,11 @@ function Pricing() {
                                     </svg>
                                 </span>Fiber Fast Unli Data
                             </p>
-                            <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
+                            <CustomLink href="/fifthlayout" className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
-                            </button>
+                            </CustomLink>
                             <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
                         </div>
                     </div>
@@ -126,11 +127,11 @@ function Pricing() {
                                     </svg>
                                 </span>Fiber Fast Unli Data
                             </p>
-                            <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
+                            <CustomLink href="/fifthlayout" className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
-                            </button>
+                            </CustomLink>
                             <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
                         </div>
                     </div>
@@ -153,11 +154,11 @@ function Pricing() {
                                     </svg>
                                 </span>Fiber Fast Unli Data
                             </p>
-                            <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
+                            <CustomLink href="/fifthlayout" className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
-                            </button>
+                            </CustomLink>
                             <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
                         </div>
                     </div>
@@ -180,11 +181,11 @@ function Pricing() {
                                     </svg>
                                 </span>Fiber Fast Unli Data
                             </p>
-                            <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
+                            <CustomLink href="/fifthlayout" className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
-                            </button>
+                            </CustomLink>
                             <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
                         </div>
                     </div>
@@ -206,11 +207,11 @@ function Pricing() {
                                     </svg>
                                 </span>Fiber Fast Unli Data
                             </p>
-                            <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
+                            <CustomLink href="/fifthlayout" className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Apply Now
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
-                            </button>
+                            </CustomLink>
                             <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
                         </div>
                     </div>
@@ -257,5 +258,11 @@ function Pricing() {
         </section>
     );
 }
-
+function CustomLink({ href, children, ...props }) {
+    return (
+        <Link to={href} {...props} >
+            {children}
+        </Link>
+    );
+}
 export default Pricing;

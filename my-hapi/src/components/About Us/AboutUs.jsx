@@ -41,7 +41,7 @@ function AboutUs(){
                 <p className="font-thin text-sm md:text-1xl mt-2">
                 Need help? Contact our team, and we’ll assist you with any questions or concerns.
                 </p>
-                <button type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
+                <button href="/fifthlayout" type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
             </div>
             </div>
             <div className="flex flex-wrap md:flex-nowrap items-center h-screen">

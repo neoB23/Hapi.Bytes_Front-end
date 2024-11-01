@@ -75,7 +75,7 @@ function Nav() {
                 <hr className="w-full border-gray-700" />
                 <CustomLink href="/sevenlayout" className="text-lg">Sign In</CustomLink>
                 <hr className="w-full border-gray-700" />
-                <CustomLink href="/" className="text-lg">Language</CustomLink>
+                <CustomLink href="/fifthlayout" className="text-lg">Apply Now</CustomLink>
                 <hr className="w-full border-gray-700" />
                 <CustomLink href="/" className="text-lg">Internet Speed</CustomLink>
             </div>

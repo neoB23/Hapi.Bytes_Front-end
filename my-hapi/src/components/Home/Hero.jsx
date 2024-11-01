@@ -51,7 +51,7 @@ function Hero() {
         />
         <button
             type="button"
-            className="h-8 sm:h-10 px-3 sm:px-4 py-1 sm:py-2 m-1 text-white transition-colors duration-300 transform bg-orange rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
+            className="h-8 sm:h-10 px-3 text-sm sm:px-4 py-1 sm:py-2 m-1 text-white transition-colors duration-300 transform bg-orange rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
         >
             Order Now
         </button>
@@ -118,7 +118,7 @@ function Hero() {
             <br className="hidden sm:block" />
             of every family. At Hapi.Bytes, empowering communities through reliable service is our passion.
         </p>
-        <button href="fifthlayout" className="text-orange border-4 border-orange p-2 text-xs sm:text-sm md:text-base">Read More</button>
+        <CustomLink href="/Thirdlayout" className="text-orange border-4 border-orange p-2 text-xs sm:text-sm md:text-base">Read More</CustomLink>
     </div>
 </div>
         </div>
