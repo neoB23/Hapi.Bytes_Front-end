@@ -2,38 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function AboutUs(){
-    const images = [
-        'images/happy-asian-family-using-tablet-video-call-virtual-meeting-together-sofa-home-living-room.jpg',
-        'images/happy-asian-young-family-homeowners-bought-new-house-chinese-mom-dad-daughter-embracing-looking-forward-future-new-home-after-moving-relocation-sitting-floor-with-boxes-together.jpg   ',
-        'images/happiness-asian-family-multi-age-generation-enjoy-watch-cheering-her-daughter-up-playing-vr-goggle-together-with-fun-exited-living-room-home-interior-background-quarantine-weekend.jpg',
-    ];
-    const [currentImage, setCurrentImage] = useState(0);
-    const [slide, setSlide] = useState(false);
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setSlide(true); // Start slide-out animation
-            // Wait for the slide-out animation to complete before changing the image
-            setTimeout(() => {
-                setCurrentImage((prevImage) => (prevImage + 1) % images.length); // Change image
-                setSlide(false); // Start slide-in animation
-            }, 500); // Duration of the animation
-        }, 20000); // Change image every 7 seconds
-        return () => clearInterval(interval);
-    }, []);
+    const backgroundImage = 'images/happy-asian-young-family-homeowners-bought-new-house-japanese-mom-dad-daughter-embracing-looking-forward-future-new-home-after-moving-relocation-sitting-sofa-with-boxes-together.jpg';
     return(
         <div> 
 			
         <div className="min-h-screen ">
-            <div className="min-h-screen relative min-h-screen flex items-center justify-center"> 
-            <div
-                className={`absolute inset-0 bg-cover transition-all duration-500 ${slide ? 'slide-out' : 'slide-in'}`}
-                style={{
-                    backgroundImage: `url(${images[currentImage]})`,
-                    backgroundPosition: 'center 30%',
-                    filter: 'brightness(0.5)',
-                    zIndex: -1,
-                }}
-            ></div>
+        <div className="relative min-h-screen flex items-center justify-center">
+                {/* Static Background Image */}
+                <div
+                    className="absolute inset-0 bg-cover"
+                    style={{
+                        backgroundImage: `url(${backgroundImage})`,
+                        backgroundPosition: 'center 30%',
+                        filter: 'brightness(0.5)',
+                        zIndex: -1,
+                    }}
+                ></div>
             <div className="relative text-white text-center z-10">
                 <h1 className="text-4xl font-bold  md:text-7xl md:font-medium">
                 Reach Out for<br/> Your Connectivity Needs
