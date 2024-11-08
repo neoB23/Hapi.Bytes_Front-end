@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function AboutUs(){
-    const backgroundImage = 'images/happy-asian-young-family-homeowners-bought-new-house-japanese-mom-dad-daughter-embracing-looking-forward-future-new-home-after-moving-relocation-sitting-sofa-with-boxes-together.jpg';
+    const backgroundImage = 'images/happy-asian-family-using-tablet-video-call-virtual-meeting-together-sofa-home-living-room.jpg   ';
     return(
         <div> 
 			
@@ -49,11 +49,11 @@ function AboutUs(){
     </div>
 </div>
 <div className="flex flex-wrap md:flex-nowrap items-center h-screen">
-    {/* Left Section (Image) */}
+   
     <div className="bg-red-600 w-full md:w-1/2 h-64 md:h-screen">
         <img src="images/462547736_1283181269791496_6732594232415440383_n.jpg" className="w-full h-full object-cover" alt="Our Goals at Hapi.Bytes" />
     </div>
-    {/* Right Section (Our Goals) */}
+  
     <div className="bg-white w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center p-6 md:p-0">
         <div className="mx-4 md:mx-20 space-y-6 md:space-y-10">
             <h1 className="text-3xl md:text-6xl font-bold mt-4 md:mt-16 text-center md:text-left">

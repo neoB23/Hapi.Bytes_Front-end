@@ -19,7 +19,7 @@ function Hero() {
                 ></div>
             {/* Text and Button Content */}
             <div className="relative text-white text-center z-10 px-4 sm:px-6 md:px-8">
-    <h1 className="text-2xl sm:text-4xl md:text-7xl font-bold md:font-medium leading-snug">
+    <h1 className="text-4xl sm:text-4xl md:text-7xl font-bold md:font-medium leading-snug">
         Connecting Communities<br />One Line at a Time.
     </h1>
     <p className="font-thin text-lg sm:text-xl md:text-1xl mt-2">
@@ -34,11 +34,12 @@ function Hero() {
             required
         />
         <button
-            type="button"
-            className="h-8 sm:h-10 px-3 text-sm sm:px-4 py-1 sm:py-2 m-1 text-white transition-colors duration-300 transform bg-orange rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
-        >
-            Order Now
-        </button>
+    type="button"
+    className="w-full sm:w-auto h-8 sm:h-10 px-2 sm:px-4 py-0.5 sm:py-2 m-1 text-xs sm:text-sm text-white transition-colors duration-300 transform bg-orange rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
+>
+    Order Now
+</button>
+
     </form>
 </div>
 </div>

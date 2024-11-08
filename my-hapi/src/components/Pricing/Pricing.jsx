@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Pricing() {
-    const backgroundImage = 'images/happy-asian-young-family-homeowners-bought-new-house-japanese-mom-dad-daughter-embracing-looking-forward-future-new-home-after-moving-relocation-sitting-sofa-with-boxes-together.jpg';
+    const backgroundImage = 'images/asian-senior-couple-using-laptop-home-asian-senior-chinese-grandparents-surf-internet-check-social-media-while-lying-sofa-living-room-home-concept.jpg';
     return (
         <section className="dark:text-gray-800 min-h-screen flex flex-col">
             <div className="min-h-screen relative flex items-center justify-center">
@@ -37,7 +37,10 @@ function Pricing() {
                     <div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra 699</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱699</h1>
+                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                                <span>₱699</span>
+                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                            </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
@@ -57,14 +60,17 @@ function Pricing() {
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </CustomLink>
-                            <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                            {/* <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> */}
                         </div>
                     </div>
 					{/* Plan 2 */}
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Lite</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱999</h1>
+                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                                <span>₱999</span>
+                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                            </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
@@ -84,14 +90,17 @@ function Pricing() {
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </CustomLink>
-                            <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                            {/* <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> */}
                         </div>
                     </div>
 					
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Plus</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱1299</h1>
+                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                                <span>₱1299</span>
+                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                            </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
@@ -111,14 +120,17 @@ function Pricing() {
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </CustomLink>
-                            <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                            {/* <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> */}
                         </div>
                     </div>
 
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Mega</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱1499</h1>
+                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                                <span>₱1499</span>
+                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                            </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
@@ -138,14 +150,17 @@ function Pricing() {
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </CustomLink>
-                            <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                            {/* <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> */}
                         </div>
                     </div>
 
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra Giga</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱1699</h1>
+                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                                <span>₱1699</span>
+                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                            </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
@@ -165,13 +180,16 @@ function Pricing() {
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </CustomLink>
-                            <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                            {/* <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> */}
                         </div>
                     </div>
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Tera</h2>
-                            <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">₱2499</h1>
+                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                                <span>₱2499</span>
+                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                            </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
@@ -191,7 +209,7 @@ function Pricing() {
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </CustomLink>
-                            <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                            {/* <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> */}
                         </div>
                     </div>
                     {/* Repeat this structure for each card, adjusting only specific plan details */}
@@ -201,35 +219,35 @@ function Pricing() {
             <section className="p-4 lg:p-8 dark:bg-gray-100 dark:text-gray-800">
 	<div className="container mx-auto space-y-12">
 		<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-			<img src="https://source.unsplash.com/640x480/?1" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+			<img src="images/Infrastruttura-di-rete-FTTH.png" alt="FTTH" className="h-80 dark:bg-gray-500 aspect-video" />
 			<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
 				<h3 className="text-3xl font-bold">FTTH (Fiber to the Home)</h3>
 				<p className="my-6 dark:text-gray-600">is an optical fiber architecture in which fiber cable is used in the access network to make the final connection directly to customer’s homes or offices. The purpose of using optical cable in the access network is to provide broadband services to the customers. The greatest hurdle in its widespread deployment was its high cost, but with the recent development in the optical communication systems and especially in the PON (Passive Optical Network) made it possible to deploy it widely with reduced cost. On the other hand high data rates are now possible because of huge available bandwidth, thus making it cost effective solution</p>
-				<button type="button" className="self-start">Action</button>
+				{/* <button type="button" className="self-start">Action</button> */}
 			</div>
 		</div>
 		<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-			<img src="https://source.unsplash.com/640x480/?2" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+			<img src="images/internet-leased-line-services-1.webp" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
 			<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
 				<h3 className="text-3xl font-bold">Leased Line Internet Connection</h3>
 				<p className="my-6 dark:text-gray-600">A leased line is a dedicated, fixed-bandwidth data connection. It allows data-hungry businesses to have a reliable, high-quality internet connection with guarantees of upload and download speed, uptime and resilience. “Leased” refers to the connection which is rented by the Internet Service Provider (ISP) directly to a business, resulting in a service above and beyond what standard broadband provides.</p>
-				<button type="button" className="self-start">Action</button>
+				{/* <button type="button" className="self-start">Action</button> */}
 			</div>
 		</div>
 		<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-			<img src="https://source.unsplash.com/640x480/?3" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+			<img src="images/istockphoto-673967530-612x612.jpg" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
 			<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
 				<h3 className="text-3xl font-bold">CCTV Installation</h3>
 				<p className="my-6 dark:text-gray-600">Security at home and in buildings is a top consideration everywhere in the world. Acting to improve the security of your loved ones is a wise and important decision given that the media frequently reports on various instances of theft and burglary. And one way to increase security in your neighborhood is by installing CCTV cameras.</p>
-				<button type="button" className="self-start">Action</button>
+				{/* <button type="button" className="self-start">Action</button> */}
 			</div>
 		</div>
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-			<img src="https://source.unsplash.com/640x480/?2" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
+			<img src="images/Hf4d306872e3d447aa33c0f414bc58b42k.avif" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
 			<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
 				<h3 className="text-3xl font-bold">WiFi Hotspot/Vendo</h3>
 				<p className="my-6 dark:text-gray-600">A leased line is a dedicated, fixed-bandwidth data connection. It allows data-hungry businesses to have a reliable, high-quality internet connection with guarantees of upload and download speed, uptime and resilience. “Leased” refers to the connection which is rented by the Internet Service Provider (ISP) directly to a business, resulting in a service above and beyond what standard broadband provides.</p>
-				<button type="button" className="self-start">Action</button>
+				{/* <button type="button" className="self-start bg-blue text-white p-2 rounded">Apply</button> */}
 			</div>
 		</div>
 	</div>
