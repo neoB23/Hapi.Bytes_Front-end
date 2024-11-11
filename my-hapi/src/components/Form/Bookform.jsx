@@ -286,28 +286,44 @@ const Bookform = () => {
                                     </div>
                                 )}
                                 {section === 'section5' && (
-                                          <div id='section4' className="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
+                                          <div id='section4' className="p-8 mt-6 lg:mt-0 rounded shadow bg-white flex space-x-2">
+                                         
+                                              <button className="px-3 py-1.5 sm:px-4 sm:py-2 bg-orange rounded text-white">Submit</button>
+                                              <button className="px-3 py-1.5 sm:px-4 sm:py-2 bg-red-600 rounded text-white">Cancel</button>
+                                       
                                             <div className="App">
-                                            <button onClick={openModal} className="bg-blue text-white px-4 py-2 rounded">
-                                              Show Message
-                                            </button>
-                                            {isModalOpen && (
-                                              <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center">
-                                                <div className="bg-white p-6 rounded shadow-lg w-1/3">
-                                                  <h1 className="text-xl font-semibold mb-4">Terms of Service</h1>
-                                                  <hr className=""/>
-                                                  <p>By using this service, you agree to the collection and storage of your responses. This information is recorded for service improvement and internal use only and will not be shared without your consent, except as required by law. You may request to view, modify, or delete your data by contacting [Contact Information].
+                                              <button onClick={openModal} className="bg-blue text-white px-4 py-2 rounded">
+                                                Show Message
+                                              </button>
+                                              {isModalOpen && (
+                                                <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center">
+                                                  <div className="bg-white p-6 rounded shadow-lg w-full max-w-md mx-4 sm:w-2/3 sm:mx-0">
+                                                    <h1 className="text-xl font-semibold mb-4">Terms of Service</h1>
+                                                    <hr className="mb-4" />
+                                                    <p className="text-sm sm:text-base">
+                                                      By using this service, you agree to the collection and storage of your responses. This information is recorded for service improvement and internal use only and will not be shared without your consent, except as required by law. You may request to view, modify, or delete your data by contacting [Contact Information].
                                                       We may update these terms periodically. Continued use implies acceptance of changes. For questions, contact [Contact Information].
-                                                      By proceeding, you confirm that you have read, understood, and agree to these Terms of Service.</p>                                    
-                                                  By clicking "Agree" or continuing to interact with the service, you confirm that you have read, understood, and agreed to these Terms of Service.
-                                                    <div className="flex space-x-2 items-center p-6 ">
-                                                      <button onClick={closeModal}  data-modal-toggle="default-modal" type="button" className="text-white bg-blue hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
-                                                      <button onClick={closeModal} data-modal-toggle="default-modal" type="button" className="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600">Decline</button>
-                                                  </div>
+                                                      By proceeding, you confirm that you have read, understood, and agree to these Terms of Service.
+                                                    </p>
+                                                    <div className="flex space-x-2 items-center pt-6">
+                                                      <button
+                                                        onClick={closeModal}
+                                                        className="text-white bg-blue hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 sm:px-5 sm:py-2.5 text-center"
+                                                      >
+                                                        I accept
+                                                      </button>
+                                                      <button
+                                                        onClick={closeModal}
+                                                        className="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 rounded-lg border border-gray-200 text-sm font-medium px-4 py-2 sm:px-5 sm:py-2.5 hover:text-gray-900"
+                                                      >
+                                                        Decline
+                                                      </button>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               )}
-                                          </div>
+                                            </div>
+
                                     </div>
                                 )}
                             </div>

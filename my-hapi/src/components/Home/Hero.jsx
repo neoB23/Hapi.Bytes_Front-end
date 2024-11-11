@@ -80,15 +80,15 @@ function Hero() {
 			</div>
 		</section>
         <div className="min-h-screen flex items-center bg-cover bg-center bg-no-repeat relative">
-    <div 
-        className="absolute inset-0 bg-cover"
-        style={{
-            backgroundImage: `url('images/Electrical lineman.jpg.webp')`,
-            backgroundPosition: 'center',
-            filter: 'brightness(0.6)',
-            zIndex: -1,
-        }}
-    ></div>
+        <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat h-screen sm:h-full w-full responsive-image"
+    style={{
+        backgroundImage: `url('images/Electrical lineman.jpg.webp')`,
+        filter: 'brightness(0.6)',
+        zIndex: -1,
+    }}
+></div>
+
     {/* Overlay for darker background */}
     <div className="absolute inset-0 bg-black opacity-50"></div>
     {/* Content section */}

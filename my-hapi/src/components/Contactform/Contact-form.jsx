@@ -12,7 +12,7 @@ function Contactform() {
                 zIndex: -1,
             }}></div>
             <div className="relative text-white text-center z-10">
-                <h1 className="text-4xl md:text-7xl font-bold">
+                <h1 className="text-4xl md:text-7xl font-medium">
                 Reach Out for<br/> Your Connectivity Needs
                 </h1>
                 <p className="font-thin text-xl md:text-1xl mt-2">
