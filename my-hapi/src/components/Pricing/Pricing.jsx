@@ -29,7 +29,7 @@ function Pricing() {
             </div>
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col space-y-4 text-center w-full mb-20">
-                    <span className="font-bold tracking-wider text-4xl md:font-bold md:text-5xl uppercase text-black">Our <span className="text-orange">Plans</span>  for Your <span className="text-orange">Connectivity</span> </span>
+                    <span className="font-bold  tracking-wider text-4xl md:font-bold md:text-5xl uppercase text-black">Our <span className="text-orange">Plans</span>  for Your <span className="text-orange">Connectivity</span> </span>
                     <h2 className="text-sm md:text-4xl font-light text-xl">Find the perfect plan for your needs whether it's for your business, startup, or home WiFi. <br/>Explore our top options below and get connected today.</h2>
                 </div>
                 <div className="flex flex-wrap -m-4">
