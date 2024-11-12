@@ -216,114 +216,107 @@ const Bookform = () => {
                                       
                                 )}
                                 {section === 'section4' && (
-                                    <div id='section3' className="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
-                                        <div>
-                                              <label className="block text-sm font-medium text-black">
-                                              Upload Proof of Billing
-                                              </label>
-                                              <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-                                              <div className="space-y-1 text-center">
-                                                  <svg className="mx-auto h-12 w-12 text-white" stroke="black" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                                                  <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" strokeLinecap="round" stroke-linejoin="round" />
-                                                  </svg>
-                                                  <div className="flex text-sm text-gray-600">
-                                                  <label for="file-upload" className="relative cursor-pointer rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                                      <span className="">Upload a file</span>
-                                                      <input id="file-upload" name="file-upload" type="file" className="sr-only"/>
-                                                  </label>
-                                                  <p className="pl-1 text-black">or drag and drop</p>
-                                                  </div>
-                                                  <p className="text-xs text-black">
-                                                  PNG, JPG, GIF up to 10MB
-                                                  </p>
-                                              </div>
-                                          </div> 
-                                      </div>        
-                                      <div>
-                                              <label className="block text-sm font-medium text-black">
-                                              Upload At least 1 Valid ID
-                                              </label>
-                                              <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-                                              <div className="space-y-1 text-center">
-                                                  <svg className="mx-auto h-12 w-12 text-white" stroke="black" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                                                  <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" strokeLinecap="round" stroke-linejoin="round" />
-                                                  </svg>
-                                                  <div className="flex text-sm text-gray-600">
-                                                  <label for="file-upload" className="relative cursor-pointer rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                                      <span className="">Upload a file</span>
-                                                      <input id="file-upload" name="file-upload" type="file" className="sr-only"/>
-                                                  </label>
-                                                  <p className="pl-1 text-black">or drag and drop</p>
-                                                  </div>
-                                                  <p className="text-xs text-black">
-                                                  PNG, JPG, GIF up to 10MB
-                                                  </p>
-                                              </div>
-                                          </div>   
-                                      </div>        
-                                      <div>
-                                              <label className="block text-sm font-medium text-black">
-                                              Installation Landmark(Take a picture of the façade of the installation location. If it’s your house, upload a 
-                                              </label>
-                                              <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-                                              <div className="space-y-1 text-center">
-                                                  <svg className="mx-auto h-12 w-12 text-white" stroke="black" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                                                  <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" strokeLinecap="round" stroke-linejoin="round" />
-                                                  </svg>
-                                                  <div className="flex text-sm text-gray-600">
-                                                  <label for="file-upload" className="relative cursor-pointer rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                                      <span className="">Upload a file</span>
-                                                      <input id="file-upload" name="file-upload" type="file" className="sr-only"/>
-                                                  </label>
-                                                  <p className="pl-1 text-black">or drag and drop</p>
-                                                  </div>
-                                                  <p className="text-xs text-black">
-                                                  PNG, JPG, GIF up to 10MB
-                                                  </p>
-                                              </div>
+                                    <div id="section3" className="p-8 mt-6 lg:mt-0 rounded shadow bg-white space-y-6">
+                                    {/* Upload Proof of Billing */}
+                                    <div>
+                                      <label className="block text-sm font-medium text-gray-800 mb-1">Upload Proof of Billing</label>
+                                      <div className="flex justify-center items-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg">
+                                        <div className="text-center">
+                                          <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                          </svg>
+                                          <div className="flex text-sm text-gray-600 mt-2">
+                                            <label htmlFor="file-upload" className="cursor-pointer font-medium text-indigo-600 hover:text-indigo-500">
+                                              <span>Upload a file</span>
+                                              <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                                            </label>
+                                            <p className="pl-1 text-gray-700">or drag and drop</p>
                                           </div>
-                                      </div> 
+                                          <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                                        </div>
+                                      </div>
                                     </div>
+                                  
+                                    {/* Upload At least 1 Valid ID */}
+                                    <div>
+                                      <label className="block text-sm font-medium text-gray-800 mb-1">Upload At least 1 Valid ID</label>
+                                      <div className="flex justify-center items-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg">
+                                        <div className="text-center">
+                                          <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                          </svg>
+                                          <div className="flex text-sm text-gray-600 mt-2">
+                                            <label htmlFor="file-upload" className="cursor-pointer font-medium text-indigo-600 hover:text-indigo-500">
+                                              <span>Upload a file</span>
+                                              <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                                            </label>
+                                            <p className="pl-1 text-gray-700">or drag and drop</p>
+                                          </div>
+                                          <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                    {/* Installation Landmark */}
+                                    <div>
+                                      <label className="block text-sm font-medium text-gray-800 mb-1">
+                                        Installation Landmark (Take a picture of the façade of the installation location. If it’s your house, upload a file here.)
+                                      </label>
+                                      <div className="flex justify-center items-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg">
+                                        <div className="text-center">
+                                          <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                          </svg>
+                                          <div className="flex text-sm text-gray-600 mt-2">
+                                            <label htmlFor="file-upload" className="cursor-pointer font-medium text-indigo-600 hover:text-indigo-500">
+                                              <span>Upload a file</span>
+                                              <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                                            </label>
+                                            <p className="pl-1 text-gray-700">or drag and drop</p>
+                                          </div>
+                                          <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
                                 )}
                                 {section === 'section5' && (
-                                          <div id='section4' className="p-8 mt-6 lg:mt-0 rounded shadow bg-white flex space-x-2">
-                                         
-                                              <button className="px-3 py-1.5 sm:px-4 sm:py-2 bg-orange rounded text-white">Submit</button>
-                                              <button className="px-3 py-1.5 sm:px-4 sm:py-2 bg-red-600 rounded text-white">Cancel</button>
+                                        <div id='section4' className="p-8 mt-6 lg:mt-0 rounded shadow bg-white flex space-x-2">
+                                              <button className="w-full sm:w-auto px-3 py-1.5 sm:px-4 sm:py-2 bg-orange rounded text-white text-sm sm:text-base">Submit</button>
+                                              <button className="w-full sm:w-auto px-3 py-1.5 sm:px-4 sm:py-2 bg-red-600 rounded text-white text-sm sm:text-base">Cancel</button>
                                        
-                                            <div className="App">
-                                              <button onClick={openModal} className="bg-blue text-white px-4 py-2 rounded">
-                                                Show Message
-                                              </button>
-                                              {isModalOpen && (
-                                                <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center">
-                                                  <div className="bg-white p-6 rounded shadow-lg w-full max-w-md mx-4 sm:w-2/3 sm:mx-0">
-                                                    <h1 className="text-xl font-semibold mb-4">Terms of Service</h1>
-                                                    <hr className="mb-4" />
-                                                    <p className="text-sm sm:text-base">
-                                                      By using this service, you agree to the collection and storage of your responses. This information is recorded for service improvement and internal use only and will not be shared without your consent, except as required by law. You may request to view, modify, or delete your data by contacting [Contact Information].
-                                                      We may update these terms periodically. Continued use implies acceptance of changes. For questions, contact [Contact Information].
-                                                      By proceeding, you confirm that you have read, understood, and agree to these Terms of Service.
-                                                    </p>
-                                                    <div className="flex space-x-2 items-center pt-6">
-                                                      <button
-                                                        onClick={closeModal}
-                                                        className="text-white bg-blue hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 sm:px-5 sm:py-2.5 text-center"
-                                                      >
-                                                        I accept
-                                                      </button>
-                                                      <button
-                                                        onClick={closeModal}
-                                                        className="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 rounded-lg border border-gray-200 text-sm font-medium px-4 py-2 sm:px-5 sm:py-2.5 hover:text-gray-900"
-                                                      >
-                                                        Decline
-                                                      </button>
+                                              <div className="App">
+                                                  <button onClick={openModal} className="w-full sm:w-auto bg-blue text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded text-sm sm:text-base">
+                                                    Show Message
+                                                  </button>
+                                                  {isModalOpen && (
+                                                    <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center">
+                                                      <div className="bg-white p-4 sm:p-6 rounded shadow-lg w-full max-w-xs sm:max-w-md mx-4">
+                                                        <h1 className="text-lg sm:text-xl font-semibold mb-4">Terms of Service</h1>
+                                                        <hr className="mb-4" />
+                                                        <p className="text-xs sm:text-sm">
+                                                          By using this service, you agree to the collection and storage of your responses. This information is recorded for service improvement and internal use only and will not be shared without your consent, except as required by law. You may request to view, modify, or delete your data by contacting [Contact Information].
+                                                          We may update these terms periodically. Continued use implies acceptance of changes. For questions, contact [Contact Information]. By proceeding, you confirm that you have read, understood, and agree to these Terms of Service.
+                                                        </p>
+                                                        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 items-center pt-4">
+                                                          <button
+                                                            onClick={closeModal}
+                                                            className="w-full sm:w-auto text-white bg-blue hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 sm:px-5 sm:py-2.5"
+                                                          >
+                                                            I accept
+                                                          </button>
+                                                          <button
+                                                            onClick={closeModal}
+                                                            className="w-full sm:w-auto text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 rounded-lg border border-gray-200 text-sm font-medium px-4 py-2 sm:px-5 sm:py-2.5 hover:text-gray-900"
+                                                          >
+                                                            Decline
+                                                          </button>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                  </div>
-                                                </div>
-                                              )}
+                                                  )}
                                             </div>
-
                                     </div>
                                 )}
                             </div>
@@ -332,9 +325,7 @@ const Bookform = () => {
                 </section>
             </div>
         </div>
-        
     );
-    
 };
 
 export default Bookform;
