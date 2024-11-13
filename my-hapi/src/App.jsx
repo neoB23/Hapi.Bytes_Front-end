@@ -11,7 +11,6 @@ const Pricing = lazy(() => import('./components/Pricing/Pricing'));
 const AboutUs = lazy(() => import('./components/About Us/AboutUs'));
 const Contactform = lazy(() => import('./components/Contactform/Contact-form'));
 const Bookform = lazy(() => import('./components/Form/Bookform'));
-const Sample = lazy(() => import('./components/Form/Sample'));
 const Admindash = lazy(() => import('./components/Admin/Admindash'));
 const Login = lazy(() => import('./components/Authentication/Login'));
 // const Navbar = lazy(() => import('./components/Navigation/NavBar'));
