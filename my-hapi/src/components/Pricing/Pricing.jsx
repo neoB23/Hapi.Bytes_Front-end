@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Pricing() {
-    const backgroundImage = 'images/asian-senior-couple-using-laptop-home-asian-senior-chinese-grandparents-surf-internet-check-social-media-while-lying-sofa-living-room-home-concept.jpg';
+    const backgroundImage = 'images/asian-senior-couple-using-laptop-home-asian-senior-chinese-grandparents-surf-internet-check-social-media-while-lying-sofa-living-room-home-concept-Copy.jpg';
     return (
         <section className="dark:text-gray-800 min-h-screen flex flex-col">
             <div className="min-h-screen relative flex items-center justify-center">
