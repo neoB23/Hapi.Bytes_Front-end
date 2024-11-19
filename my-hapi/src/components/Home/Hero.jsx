@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Hero() {
-    const backgroundImage = 'images/happy-asian-young-family-homeowners-bought-new-house-japanese-mom-dad-daughter-embracing-looking-forward-future-new-home-after-moving-relocation-sitting-sofa-with-boxes-together.jpg';
+    const backgroundImage = 'images/happy-asian-young-family-homeowners-bought-new-house-japanese-mom-dad-daughter-embracing-looking-forward-future-new-home-after-moving-relocation-sitting-sofa-with-boxes-together-min.jpg';
 
     return (
         <div>

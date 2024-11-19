@@ -6,7 +6,7 @@ function Pricing() {
     return (
         <section className="dark:text-gray-800 min-h-screen flex flex-col">
             <div className="min-h-screen relative flex items-center justify-center">
-           <div
+        <div
                     className="absolute inset-0 bg-cover"
                     style={{
                         backgroundImage: `url(${backgroundImage})`,
@@ -15,8 +15,6 @@ function Pricing() {
                         zIndex: -1,
                     }}
                 ></div>
-
-
                 <div className="relative text-white text-center z-10">
                     <h1 className="text-4xl font-bold md:text-7xl md:font-medium">
                         Affordable Plans for Every Household
