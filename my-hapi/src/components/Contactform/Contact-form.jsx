@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Contactform() {
     return (
@@ -18,7 +19,7 @@ function Contactform() {
                 <p className="font-thin text-xl md:text-1xl mt-2">
                 Need help? Contact our team, and we’ll assist you with any questions or concerns.
                 </p>
-                <button type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
+                <CustomLink href="/" type="button" className="mt-10 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</CustomLink>
             </div>
             </div>
             <section className="text-gray-600 body-font relative">
@@ -86,6 +87,13 @@ function Contactform() {
             
         </div>
         
+    );
+}
+function CustomLink({ href, children, className, ...props }) {
+    return (
+        <Link to={href} className={className} {...props}>
+            {children}
+        </Link>
     );
 }
 

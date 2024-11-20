@@ -25,7 +25,7 @@ function AboutUs(){
                 <p className="font-thin text-sm md:text-1xl mt-2">
                 Need help? Contact our team, and we’ll assist you with any questions or concerns.
                 </p>
-                <button href="/fifthlayout" type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
+                <CustomLink href="/fifthlayout" type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</CustomLink>
             </div>
             </div>
             <div className="flex flex-col md:flex-row items-center h-auto md:h-screen">
@@ -132,9 +132,9 @@ function AboutUs(){
     );
 }
 
-function CustomLink({ href, children, ...props }) {
+function CustomLink({ href, children, className, ...props }) {
     return (
-        <Link to={href} {...props} className="hover:underline">
+        <Link to={href} className={className} {...props}>
             {children}
         </Link>
     );
