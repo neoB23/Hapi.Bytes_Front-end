@@ -100,7 +100,7 @@ function Hero() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat h-screen sm:h-full w-full responsive-image"
                     style={{
-                        backgroundImage: `url('images/Electrical lineman.jpg.webp')`,
+                        backgroundImage: `url('images/Electrical lineman.jpg - Copy.webp')`,
                         filter: 'brightness(0.6)',
                         zIndex: -1,
                     }}

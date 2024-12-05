@@ -19,10 +19,11 @@ function Pricing() {
                     <h1 className="text-4xl font-bold md:text-7xl md:font-medium">
                         Affordable Plans for Every Household
                     </h1>
-                    <p className="font-thin text-sm md:text-1xl mt-2">
+                    <p className="font-thin text- md:text-1xl mt-2">
                         Choose from a range of affordable plans designed to fit your home or business needs. Stay connected, your way
                     </p>
-                    <button href="/" type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</button>
+                    <br/>
+                    <CustomLink href="/fifthlayout" type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</CustomLink>
                 </div>
             </div>
             <div className="container px-5 py-24 mx-auto">
@@ -31,13 +32,13 @@ function Pricing() {
                     <h2 className="text-sm md:text-4xl font-light text-xl">Find the perfect plan for your needs whether it's for your business, startup, or home WiFi. <br/>Explore our top options below and get connected today.</h2>
                 </div>
                 <div className="flex flex-wrap -m-4">
-                    {/* Adjusted class xl:w-1/3 for 3x3 layout */}
+                    {/* Adjusted className xl:w-1/3 for 3x3 layout */}
                     <div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra 699</h2>
-                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                            <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                                 <span>₱699</span>
-                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                                <span className="text-lg ml-1 font-normal text-gray-500">/mo</span>
                             </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -65,9 +66,9 @@ function Pricing() {
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Lite</h2>
-                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                            <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                                 <span>₱999</span>
-                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                                <span className="text-lg ml-1 font-normal text-gray-500">/mo</span>
                             </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -95,9 +96,9 @@ function Pricing() {
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Plus</h2>
-                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                            <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                                 <span>₱1299</span>
-                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                                <span className="text-lg ml-1 font-normal text-gray-500">/mo</span>
                             </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -125,9 +126,9 @@ function Pricing() {
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Mega</h2>
-                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                            <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                                 <span>₱1499</span>
-                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                                <span className="text-lg ml-1 font-normal text-gray-500">/mo</span>
                             </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -155,9 +156,9 @@ function Pricing() {
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Xtra Giga</h2>
-                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                            <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                                 <span>₱1699</span>
-                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                                <span className="text-lg ml-1 font-normal text-gray-500">/mo</span>
                             </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -184,9 +185,9 @@ function Pricing() {
 					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
                         <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">HB Tera</h2>
-                            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                            <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                                 <span>₱2499</span>
-                                <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                                <span className="text-lg ml-1 font-normal text-gray-500">/mo</span>
                             </h1> 
                             <p className="flex items-center text-gray-600 mb-2">
                                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">

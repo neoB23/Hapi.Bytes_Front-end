@@ -13,7 +13,7 @@ const Contactform = lazy(() => import('./components/Contactform/Contact-form'));
 const Bookform = lazy(() => import('./components/Form/Bookform'));
 const Admindash = lazy(() => import('./components/Admin/Admindash'));
 const Login = lazy(() => import('./components/Authentication/Login'));
-
+const Area = lazy (() => import ('./components/Area/area'));
 // Layouts
 const MainLayout = () => (
   <div className="fade-in">
@@ -64,6 +64,11 @@ const SevenLayout = () => (
     <Footer/>
   </div>
 );
+const EightLayout = () => (
+  <div className="fade-in">
+    <Area/>
+  </div>
+);
 function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation(); // To detect route changes
@@ -92,6 +97,7 @@ function App() {
         <Route path="/fifthlayout" element={<FifthLayout />} />
         <Route path="/sixlayout" element={<SixLayout />} />
         <Route path="/sevenlayout" element={<SevenLayout />} />
+        <Route path="/area" element={<EightLayout />} />
       </Routes>
     </Suspense>
   );

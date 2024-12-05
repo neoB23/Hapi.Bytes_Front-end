@@ -22,9 +22,10 @@ function AboutUs(){
                 <h1 className="text-4xl font-bold  md:text-7xl md:font-medium">
                 Reach Out for<br/> Your Connectivity Needs
                 </h1>
-                <p className="font-thin text-sm md:text-1xl mt-2">
+                <p className="font-thin text-xl md:text-1xl mt-2">
                 Need help? Contact our team, and we’ll assist you with any questions or concerns.
                 </p>
+                <br/>
                 <CustomLink href="/fifthlayout" type="button" className="mt-4 px-8 py-3 rounded-full bg-orange dark:text-gray-100">Apply Now</CustomLink>
             </div>
             </div>

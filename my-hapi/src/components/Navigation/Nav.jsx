@@ -37,9 +37,15 @@ function Nav() {
                     <CustomLink href="/seclayout">Pricing</CustomLink>
                     <CustomLink href="/fourthlayout">Contact Us</CustomLink>
                 </div>
+
+               
         
                 {/* Burger Menu Button */}
-                <div className="flex justify-end">
+                <div className="flex justify-end space-x-4">
+                    <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="white" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4"/></svg>
+                    </button>
+
                     <button onClick={toggleMenu}>
                         <img
                             src="images/iconamoon--menu-burger-horizontal.png"
@@ -52,7 +58,7 @@ function Nav() {
         
             {/* Right-side overlay menu, only on mobile */}
             {menuOpen && (
-                <div className="fixed inset-0 md:inset-auto md:right-0 md:w-1/6 h-full bg-black bg-opacity-90 p-6 text-white flex flex-col items-start space-y-6 transition-transform duration-300 ease-in-out z-50">
+                <div className="fixed inset-0 md:inset-auto md:right-0 md:w-1/6 h-full bg-black  p-6 text-white flex flex-col items-start space-y-6 transition-transform duration-300 ease-in-out z-50">
                     {/* Close (X) Button */}
                     <button onClick={toggleMenu} className="self-end mb-6">
                         <svg
@@ -82,7 +88,7 @@ function Nav() {
                     <hr className="w-full border-gray-700" />
                     <CustomLink href="/fourthlayout">Contact Us</CustomLink>
                     <hr className="w-full border-gray-700" />
-                    <CustomLink href="/" className="text-lg">Area Coverage</CustomLink>
+                    <CustomLink href="/area" className="text-lg">Area Coverage</CustomLink>
                     <hr className="w-full border-gray-700" />
                     <CustomLink href="/sevenlayout" className="text-lg">Sign In</CustomLink>
                     <hr className="w-full border-gray-700" />

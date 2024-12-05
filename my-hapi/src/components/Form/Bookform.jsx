@@ -37,11 +37,13 @@ const Bookform = () => {
     return (
         <div className="bg-gray-100 text-gray-900 tracking-wider leading-normal ">
             
-
+           
             <div className="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
-                <div className="w-full lg:w-1/5 px-6 text-xl text-gray-800 leading-normal">                  
+                <div className="w-full lg:w-1/5 px-6 text-xl text-gray-800 leading-normal">  
+                 
                     <div className={`w-full sticky inset-0 hidden max-h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 my-2 lg:my-0 border border-gray-400 lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20 ${isHelpMenuOpen ? '' : 'hidden'}`} style={{ top: '6em' }} id="menu-content">
                         <ul className="list-reset py-2 md:py-0">
+                        <button className="p-2 text-sm  ml-4 bg-orange text-white rounded sticky ">Return</button>
                             {['section1', 'section2', 'section3', 'section4', 'section5'].map((section, index) => (
                                 <li key={index} className="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
                                     <a href={`#${section}`} className="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
@@ -52,7 +54,7 @@ const Bookform = () => {
                         </ul>
                     </div>
                 </div>
-
+                
                 <section className="w-full lg:w-4/5">
                     <h1 className="flex items-center font-sans font-bold break-normal text-gray-700 px-2 text-xl mt-12 lg:mt-0 md:text-2xl">
                         Apply Now
